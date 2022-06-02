@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let i,j,c=1,range=20;
+
+        for(i=2;i<=range;i++)
+        {
+            for(j=2;j<i;j++)
+            {
+                if(i%j==0)
+                {
+                    c=2
+                }
+                else
+                {
+                    c=1
+                }
+            }
+        }
+        for(i=2;i<=range;i++)
+        {
+            if (c==1)
+            {
+                document.writeln(i)
+            }
+        }
+
+
+    </script>
+</body>
+</html>

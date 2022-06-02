@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function himaximum()
+    {
+        let num1=parseInt(document.getElementById("txtvalue1").value);
+        let num2=parseInt(document.getElementById("txtvalue2").value);
+
+        if(num1>num2)
+        {
+            document.getElementById("spanmaximum").innerText=(num1+" is Max.")
+        }
+        else
+        {
+            document.getElementById("spanmaximum").innerText=(num2+" is Max.")
+        }
+    }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="txtvalue1" placeholder="Value1"><br><br>
+        <input type="text" id="txtvalue2" placeholder="Value2"><br><br>
+
+        <input type="button" value="Check for Maximum" onclick="himaximum();"><br><br>
+        <span id="spanmaximum"></span>
+    </form>
+
+</body>
+</html>

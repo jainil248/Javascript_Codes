@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hiarithmatic()
+    {
+        let num1=parseInt(document.getElementById("txtvalue1").value);
+        let num2=parseInt(document.getElementById("txtvalue2").value);
+
+        document.getElementById("spanadd").innerText=(num1+num2);
+        document.getElementById("spansub").innerText=(num1-num2);
+        document.getElementById("spanmultiply").innerText=(num1*num2);
+        document.getElementById("spandivide").innerText=(num1/num2);
+    }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="txtvalue1" placeholder="Value 1"><br><br>
+        <input type="text" id="txtvalue2" placeholder="Value 2"><br><br>
+
+        <input type="button" value="Add" onclick="hiarithmatic();"><br>
+        <span id="spanadd"></span><br><br>
+        <input type="button" value="Minus" onclick="hiarithmatic();"><br>
+        <span id="spansub"></span><br><br>
+        <input type="button" value="Multiply" onclick="hiarithmatic();"><br>
+        <span id="spanmultiply"></span><br><br>
+        <input type="button" value="Divide" onclick="hiarithmatic();"><br>
+        <span id="spandivide"></span>
+    </form>
+</body>
+</html>

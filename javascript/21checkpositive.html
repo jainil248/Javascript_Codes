@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hiioddeven()
+    {
+        let num=document.getElementById("txtvalue").value;
+
+        if(num>0)
+        {
+            document.getElementById("spanpositive").innerText=(num+" is positive")
+        }
+        else
+        {
+            document.getElementById("spanpositive").innerText=(num+" is negative")
+        }
+    }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="txtvalue" placeholder="Value"><br><br>
+
+        <input type="button" value="Check for positive/negative" onclick="hiioddeven();"><br><br>
+        <span id="spanpositive"></span>
+    </form>
+
+</body>
+</html>

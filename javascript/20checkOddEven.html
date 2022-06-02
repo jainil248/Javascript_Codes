@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hiioddeven()
+    {
+        let num=document.getElementById("txtvalue").value;
+
+        if(num%2==0)
+        {
+            document.getElementById("spanoddeven").innerText=(num+" is even")
+        }
+        else
+        {
+            document.getElementById("spanoddeven").innerText=(num+" is odd")
+        }
+    }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="txtvalue" placeholder="Value"><br><br>
+
+        <input type="button" value="Check for Odd/Even" onclick="hiioddeven();"><br><br>
+        <span id="spanoddeven"></span>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hifact()
+    {
+        let num=parseInt(document.getElementById("txtnum").value);
+        let i,f=1;
+        
+        for(i=1;i<=num;i++)
+        {
+            f=f*i
+        }
+        document.getElementById("spanfact").innerText=(f);
+    }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="txtnum" placeholder="Value"><br><br>
+
+        <input type="button" value="Factorial" onclick="hifact();"><br><br>
+        Factorial =><span id="spanfact"></span><br><br>
+
+        
+    </form>
+</body>
+</html>
