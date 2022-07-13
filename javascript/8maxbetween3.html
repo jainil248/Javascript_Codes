@@ -9,31 +9,21 @@
 <body>
     <script>
 
-        let n1=520,n2=400,n3=60;
+        let n1=-520,n2=-4000,n3=60;
 
-        if (n1>n2)
+        if (n1>n2 && n1>n3)
         {
-            if(n1>n3)
-            {
-                document.writeln(n1 + " is max.")
-            }
-            else
-            {
-                document.writeln(n3 + " is max.")
-            }
+            document.writeln(n1 + " is max.") 
+        }
+        else if (n2>n1 && n2>n3)
+        {
+            document.writeln(n2 + " is max.") 
+        }
+        else if (n3>n1 && n3>n2)
+        {
+            document.writeln(n3 + " is max.") 
         }
 
-        else
-        {
-            if (n2>n3)
-            {
-                document.writeln(n2 + " is max.")
-            }
-            else
-            {
-                document.writeln(n3 + " is max.")
-            }
-        }
     </script>
 </body>
 </html>

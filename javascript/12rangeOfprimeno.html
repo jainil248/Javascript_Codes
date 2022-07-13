@@ -9,28 +9,23 @@
 <body>
     <script>
 
-        let i,j,c=1,range=20;
+        let i,j,range,n=1;c=1;
+        range=prompt("Enter Limit =>");
 
-        for(i=2;i<=range;i++)
+        while (n<range)
         {
-            for(j=2;j<i;j++)
+            for(i=2;i<n;i++)
             {
-                if(i%j==0)
+                if(n%i==0)
                 {
-                    c=2
+                    pass;
                 }
                 else
                 {
-                    c=1
+                    document.writeln(n+"<br>")
                 }
             }
-        }
-        for(i=2;i<=range;i++)
-        {
-            if (c==1)
-            {
-                document.writeln(i)
-            }
+            n++;
         }
 
 

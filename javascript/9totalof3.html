@@ -9,12 +9,27 @@
 <body>
     <script>
 
-        let s1=40,s2=25,s3=20;
+        let s1=30,s2=25,s3=20;
 
         total=s1+s2+s3;
-        document.writeln("Total =>"+ total)
+        document.writeln("Total =>"+ total+"<br>")
 
-        if ()
+        if (total<=90 && total>70)
+        {
+            document.writeln("Distinction");
+        }
+        else if (total<=70 && total>50)
+        {
+            document.writeln("First Class");
+        }
+        else if (total<=50 && total>30)
+        {
+            document.writeln("Second Class");
+        }
+        else
+        {
+            document.writeln("Fail!!");
+        }
         
     </script>
 </body>

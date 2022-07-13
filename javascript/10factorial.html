@@ -11,12 +11,13 @@
     <script>
         let i,num=8,f=1;
         
-        for(i=1;i<=num;i++)
+        for(i=num;i>=1;i--)
         {
-            f=f*i
+            f=f*i;
+            document.writeln(i+"*")
         }
 
-        document.writeln("Factorial of "+num+"=> "+f)
+        document.writeln(" => "+f)
     </script>
 </body>
 </html>
