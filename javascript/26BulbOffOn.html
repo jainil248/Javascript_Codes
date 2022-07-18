@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function hibulbon()
+    {
+        document.getElementById("bulb1").src=("pic_bulbon.gif");
+    }
+    function hibulboff()
+    {
+        document.getElementById("bulb1").src=("pic_bulboff.gif");
+    }
+</script>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="button" value="Turn on Light" onclick="hibulbon();"><br><br>
+            </td>
+            <td>
+                  <img src="pic_bulboff.gif"  id="bulb1" style="width:100px;"></imgsrc>
+            </td>
+            <td>
+                <input type="button" value="Turn off Light" onclick="hibulboff();"><br><br>
+            </td>
+        </tr>
+    </table>
+</body>    
+</html>
