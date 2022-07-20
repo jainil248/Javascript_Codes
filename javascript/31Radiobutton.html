@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hicolorred()
+    {
+        alert("Red");
+        document.bgColor="red";
+    }
+    function hicoloryellow()
+    {
+        alert("Yellow");
+        document.bgColor="yellow";
+    }
+    function hicolorpurple()
+    {
+        alert("Purple");
+        document.bgColor="purple";
+    }
+</script>
+<body>
+    <input type="radio" id="r1" name="color" value="red"    onclick="hicolorred();">Red<br>
+    <input type="radio" id="y1" name="color" value="yellow" onclick="hicoloryellow();">Yellow<br>
+    <input type="radio" id="p1" name="color" value="purple" onclick="hicolorpurple();">Purple<br>
+</body>
+</html>
